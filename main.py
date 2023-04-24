@@ -45,11 +45,11 @@ if __name__ == '__main__':
     while True:
         current_time = datetime.datetime.now()
         
-        if(not uploaded and current_time.hour == 0):
+        if(not uploaded and current_time.hour == 12):
             main()
             uploaded = True
 
-        if(current_time.hour == 23):
+        if(current_time.hour == 11):
             uploaded = False
         time.sleep(10000)
 
