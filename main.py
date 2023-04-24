@@ -39,7 +39,7 @@ def main():
             uploader.upload_video(video_data)
 
 
-uploaded = True
+uploaded = False
 
 if __name__ == '__main__':
     while True:
@@ -47,9 +47,9 @@ if __name__ == '__main__':
         
         if(not uploaded and current_time.hour == 0):
             main()
-            uploaded = False
+            uploaded = True
 
         if(current_time.hour == 23):
-            uploaded = True
+            uploaded = False
         time.sleep(10000)
 
