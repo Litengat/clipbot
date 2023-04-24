@@ -35,7 +35,7 @@ def main():
             "title": clip_info['data'][0]['title'] + " #shorts ",
             "description": "Ein clip von " + clip_info['data'][0]['broadcaster_name'],
             "keywords":"twitch,twitch Clips," + clip_info['data'][0]['broadcaster_name'],
-            "privacyStatus":"private" }
+            "privacyStatus":"public" }
             uploader.upload_video(video_data)
 
 
