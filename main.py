@@ -11,9 +11,7 @@ from moviepy.editor import *
 
 
 def main():
-    #url = input("clip: ")
     
-
     ULRs = getclips.get_Clips_Urs()
     if (len(ULRs) >= 6):
         for i in range(6):
